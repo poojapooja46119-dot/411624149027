@@ -11,10 +11,17 @@ p{
 img{
     height: 500px;
     width: 500px;
-    border-radius:500px;
+    
+}
+@media(max-width:600px){
+    img{
+        height: auto;
+        width: 500px;
+    }
 }
 video{
-    height:900px;
+    height:500px;
+    width: 500px;
 }
 ol{
     list-style-type:lower-alpha;
@@ -28,7 +35,7 @@ button{
     background-color:blue;
 }
 button:hover{
-    background-color:greenyellow;
+    background-color:rgb(255, 47, 47);
     padding:20px;
     margin:20px;
 }
@@ -41,6 +48,13 @@ nav{
     display:flex;
     flex-direction:column;
 }
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction:row;
+        gap:50px;
+    }
+}
 #p1{
     font-style: normal;
 }
@@ -49,5 +63,21 @@ nav{
 }
 .grid{
     display: grid;
-    grid-template-columns:33% 33% 33%;
+    
 }
+@media(min-width:1024px){
+    .grid{
+        display:grid;
+        grid-template-columns:33% 33% 33%;
+
+    }
+}
+@media(max-width:600px){
+    .grid{
+        display:grid;
+        grid-template-columns:33% 33% 33%;
+
+    }
+}
+
+

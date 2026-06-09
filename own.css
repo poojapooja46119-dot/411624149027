@@ -1,0 +1,15 @@
+body{
+    color: green;
+    background-color = black;
+}
+img{
+    height: 500px;
+    width: 300px;
+    
+}
+@media(min-width:1024px){
+    img{
+        height: 500px;
+        width: 500px;
+    }
+}
